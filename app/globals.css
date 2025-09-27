@@ -3,13 +3,81 @@
 @tailwind utilities;
 
 html {
-  --line-color: #e5e7eb;
+  --line-color: #e2e8f0;
 }
 
 html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+  --line-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+body.dark {
+  background: #0f172a;
 }
 
 .borderBlack {
-  @apply border border-black/10;
+  @apply border border-black/10 dark:border-white/10;
+}
+
+.glass-effect {
+  @apply bg-white/20 backdrop-blur-lg border border-white/20 shadow-xl;
+}
+
+.glass-effect-dark {
+  @apply dark:bg-gray-900/20 dark:backdrop-blur-lg dark:border-gray-700/20;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent;
+}
+
+.gradient-border {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #d946ef) padding-box,
+              linear-gradient(135deg, #3b82f6, #8b5cf6, #d946ef) border-box;
+  border: 2px solid transparent;
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.section-container {
+  @apply max-w-[75rem] mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card-glass {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300;
+}
+
+.card-glass-dark {
+  @apply dark:bg-gray-900/80 dark:border-gray-700/20 dark:shadow-gray-900/20;
 }

@@ -35,6 +35,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer",
+    location: "Alturian Indonesia",
+    description:
+      "Bekerja sebagai Software Engineer di Alturian Indonesia, mengembangkan aplikasi full-stack menggunakan Laravel (backend) dan Angular (frontend). Tanggung jawab meliputi merancang dan mengelola RESTful API, mengoptimalkan performa aplikasi, serta mengimplementasikan fitur strategis seperti e-Invoicing, integrasi SAP, dan sistem pengiriman email otomatis dengan lampiran Invoice.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - Present",
+  },
+  {
     title: "Alumni Kampus Mengajar Batch 4",
     location: "Kendalsari, Pemalang",
     description:
@@ -79,7 +87,7 @@ export const projectsData = [
     title: "BTS-Army",
     description:
       "Merupakan website untuk mendata alutsista, dimana website ini dibuat untuk mengugurkan tugas besar salah satu mata kuliah.",
-    tags: ["React", "Next.js", "SQL", "Tailwind"],
+    tags: ["React", "Next.js", "MySQL", "Tailwind"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -89,11 +97,16 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "React",
-  "Next.js",
+  "NestJs",
   "Tailwind",
   "Python",
   "Laravel",
   "Flutter",
   "Firebase",
+  "PHP",
+  "MySQL",
+  "Git",
   "Kotlin",
+  "Java",
+  "Angular",
 ] as const;
