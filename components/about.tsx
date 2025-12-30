@@ -25,8 +25,8 @@ export default function About() {
       </div>
 
       <SectionHeading>About Me</SectionHeading>
-      
-      <motion.div 
+
+      <motion.div
         className="relative mt-6 group"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -34,27 +34,27 @@ export default function About() {
       >
         {/* Glass card with enhanced effects */}
         <div className="relative bg-white/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/40 overflow-hidden hover:shadow-3xl hover:border-white/50 transition-all duration-500 group-hover:bg-white/35 dark:bg-gray-800/30 dark:border-gray-700/40 dark:hover:border-gray-600/50 dark:group-hover:bg-gray-800/35">
-          
+
           {/* Inner glow effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent rounded-3xl group-hover:from-white/30 transition-all duration-500 dark:from-gray-700/10 dark:group-hover:from-gray-600/20"></div>
-          
+
           {/* Shimmer effect */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer dark:via-gray-400/10"></div>
           </div>
-          
+
           {/* Floating particles effect */}
           <div className="absolute inset-0 overflow-hidden rounded-3xl">
             <div className="absolute top-4 left-4 w-2 h-2 bg-primary-400/40 rounded-full animate-pulse"></div>
-            <div className="absolute top-12 right-8 w-1.5 h-1.5 bg-primary-500/30 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-            <div className="absolute bottom-8 left-8 w-1 h-1 bg-primary-300/50 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-            <div className="absolute bottom-4 right-4 w-1.5 h-1.5 bg-primary-400/30 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-            <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-primary-200/60 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+            <div className="absolute top-12 right-8 w-1.5 h-1.5 bg-primary-500/30 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute bottom-8 left-8 w-1 h-1 bg-primary-300/50 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-4 right-4 w-1.5 h-1.5 bg-primary-400/30 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-primary-200/60 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
           </div>
 
           {/* Content */}
           <div className="relative z-10">
-            <motion.p 
+            <motion.p
               className="mt-3 text-xl font-bold text-primary-600 dark:text-primary-400"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -62,43 +62,43 @@ export default function About() {
             >
               Muhamad Aenun Zidane
             </motion.p>
-            
-            <motion.p 
+
+            <motion.p
               className="mb-6 text-gray-700 dark:text-gray-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              Saya adalah seorang <span className="font-semibold text-primary-600 dark:text-primary-400">Computer Science graduate</span> dengan dua tahun pengalaman profesional di bidang pengembangan web, mencakup proyek freelance, magang, hingga full-time. 
-              Saya memiliki <span className="font-semibold text-primary-600 dark:text-primary-400">passion untuk terus belajar teknologi baru</span> dan berkembang sebagai Software Engineer yang serba bisa. 
-              Berpengalaman dalam merancang, mengembangkan, dan mengoptimalkan aplikasi web yang berkualitas tinggi serta user-friendly, 
-              sekaligus mampu bekerja sama secara efektif dalam tim. 
+              Saya adalah seorang <span className="font-semibold text-primary-600 dark:text-primary-400">Computer Science graduate</span> dengan dua tahun pengalaman profesional di bidang pengembangan web, mencakup proyek freelance, magang, hingga full-time.
+              Saya memiliki <span className="font-semibold text-primary-600 dark:text-primary-400">passion untuk terus belajar teknologi baru</span> dan berkembang sebagai Software Engineer yang serba bisa.
+              Berpengalaman dalam merancang, mengembangkan, dan mengoptimalkan aplikasi web yang berkualitas tinggi serta user-friendly,
+              sekaligus mampu bekerja sama secara efektif dalam tim.
               Saya juga memiliki <span className="font-semibold text-primary-600 dark:text-primary-400">pemahaman dasar tentang prinsip keamanan siber</span> dan bersemangat untuk mengaplikasikan keahlian pengembangan saya pada proyek IT Security.
             </motion.p>
 
-            <motion.p 
+            <motion.p
               className="mb-6 text-gray-700 dark:text-gray-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              Saat ini saya bekerja di <span className="font-semibold text-success-600 dark:text-success-400">Alturian Indonesia</span> sebagai <span className="font-semibold text-primary-600 dark:text-primary-400">Full-Stack Developer</span>, 
-              merancang dan mengembangkan berbagai solusi enterprise untuk klien retail terkemuka guna mengoptimalkan operasi bisnis, supply chain, dan manajemen data. 
-              Saya mengembangkan <span className="font-semibold text-primary-600 dark:text-primary-400">sistem manajemen retail komprehensif</span> (produk, stok, transaksi penjualan) dengan dashboard analytics, 
-              membangun multiple enterprise solutions seperti <span className="font-semibold text-primary-600 dark:text-primary-400">E-Invoice, Forecasting, Master Data Management (MDM), dan Supplier Portal</span>. 
-              Implementasi key features meliputi <span className="font-semibold text-primary-600 dark:text-primary-400">bulk CSV uploads, real-time status tracking, automated PDF generation, dan SAP integration</span>, 
+              Saya Pernah bekerja di <span className="font-semibold text-success-600 dark:text-success-400">Alturian Indonesia</span> sebagai <span className="font-semibold text-primary-600 dark:text-primary-400">Full-Stack Developer</span>,
+              merancang dan mengembangkan berbagai solusi enterprise untuk klien retail terkemuka guna mengoptimalkan operasi bisnis, supply chain, dan manajemen data.
+              Saya mengembangkan <span className="font-semibold text-primary-600 dark:text-primary-400">sistem manajemen retail komprehensif</span> (produk, stok, transaksi penjualan) dengan dashboard analytics,
+              membangun multiple enterprise solutions seperti <span className="font-semibold text-primary-600 dark:text-primary-400">E-Invoice, Forecasting, Master Data Management (MDM), dan Supplier Portal</span>.
+              Implementasi key features meliputi <span className="font-semibold text-primary-600 dark:text-primary-400">bulk CSV uploads, real-time status tracking, automated PDF generation, dan SAP integration</span>,
               dengan menerapkan konsep <span className="font-semibold text-primary-600 dark:text-primary-400">microservices</span> untuk mengembangkan komponen modular dan scalable.
             </motion.p>
 
-            <motion.p 
+            <motion.p
               className="text-gray-700 dark:text-gray-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
             >
-              <span className="font-medium text-gray-600 dark:text-gray-400">Saat tidak sedang coding</span>, saya menikmati bermain video game, menonton film, mendengarkan musik, 
-              dan <span className="font-semibold text-primary-600 dark:text-primary-400">mempelajari hal-hal baru</span>, termasuk bahasa pemrograman lain serta konsep arsitektur modern seperti <span className="font-semibold text-primary-600 dark:text-primary-400">microservices</span>. 
-              Saya selalu terbuka untuk tantangan baru dan saat ini mencari <span className="font-semibold text-primary-600 dark:text-primary-400">posisi full-time sebagai Software Engineer </span> 
+              <span className="font-medium text-gray-600 dark:text-gray-400">Saat tidak sedang coding</span>, saya menikmati bermain video game, menonton film, mendengarkan musik,
+              dan <span className="font-semibold text-primary-600 dark:text-primary-400">mempelajari hal-hal baru</span>, termasuk bahasa pemrograman lain serta konsep arsitektur modern seperti <span className="font-semibold text-primary-600 dark:text-primary-400">microservices</span>.
+              Saya selalu terbuka untuk tantangan baru dan saat ini mencari <span className="font-semibold text-primary-600 dark:text-primary-400">posisi full-time sebagai Software Engineer </span>
               untuk terus mengasah keterampilan saya dan berkontribusi pada proyek berdampak besar.
             </motion.p>
           </div>
